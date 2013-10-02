@@ -52,6 +52,7 @@ void AppendMatrixModule::execute()
   auto matrixRHS = getRequiredInput(SecondMatrix);
   auto param = (AppendMatrixAlgorithm::Parameters) get_state()->getValue(AppendMatrixAlgorithm::OptionName).getInt();
 
+  //TODO: inject
   AppendMatrixAlgorithm algo;
   AppendMatrixAlgorithm::Outputs output = algo.run(AppendMatrixAlgorithm::Inputs(matrixLHS, matrixRHS), param);
 
