@@ -134,8 +134,6 @@ private Q_SLOTS:
   void readDefaultNotePosition(int index);
   void updateMiniView();
   void showPythonWarning(bool visible);
-  void makeModulesLargeSize();
-  void makeModulesSmallSize();
   void exitApplication(int code);
 };
 

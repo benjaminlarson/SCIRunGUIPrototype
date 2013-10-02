@@ -635,6 +635,31 @@ void NetworkEditor::selectAll()
   }
 }
 
+void NetworkEditor::makeModulesLargeSize()
+{
+  Q_FOREACH(QGraphicsItem* item, scene_->items())
+  {
+    if (ModuleProxyWidget* w = dynamic_cast<ModuleProxyWidget*>(item))
+    {
+      w->resize(w->size() * 2);
+    }
+  }
+  std::cout << "Modules are large" << std::endl;
+}
+
+void NetworkEditor::makeModulesSmallSize()
+{
+  Q_FOREACH(QGraphicsItem* item, scene_->items())
+  {
+    if (ModuleProxyWidget* w = dynamic_cast<ModuleProxyWidget*>(item))
+    {
+      w->resize(w->size() * 0.5);
+      //w->setSmall();
+    }
+  }
+  std::cout << "TODO: Modules are small" << std::endl;
+}
+
 NetworkEditor::~NetworkEditor()
 {
   clear();

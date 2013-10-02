@@ -151,6 +151,8 @@ Q_SIGNALS:
     void setConnectionPipelineType(int type);
     void addModuleViaDoubleClickedTreeItem();
     void selectAll();
+    void makeModulesLargeSize();
+    void makeModulesSmallSize();
 
   Q_SIGNALS:
     void addConnection(const SCIRun::Dataflow::Networks::ConnectionDescription&);
