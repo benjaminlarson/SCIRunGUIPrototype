@@ -34,6 +34,7 @@ DEALINGS IN THE SOFTWARE.
 #include <Modules/Legacy/Fields/CalculateGradients.h>
 #include <Modules/Legacy/Fields/GetFieldData.h>
 #include <Modules/Legacy/Fields/SetFieldData.h>
+#include <Modules/Legacy/Fields/SetFieldDataToConstantValue.h>
 #include <Modules/Legacy/Fields/ApplyMappingMatrix.h>
 #include <Modules/Legacy/Fields/SplitFieldByConnectedRegion.h>
 #include <Modules/Legacy/Math/SelectSubMatrix.h>
@@ -74,6 +75,7 @@ void ModuleDescriptionLookup::addMoreModules()
   addModuleDesc<GetFieldDataModule>("GetFieldData", "ChangeFieldData", "SCIRun", "Real ported module", "...");
   addModuleDesc<InterfaceWithCleaverModule>("InterfaceWithCleaver", "NewField", "SCIRun", "New module", "...");
   addModuleDesc<SetFieldDataModule>("SetFieldData", "ChangeFieldData", "SCIRun", "Real ported module", "...");
+	addMoudleDesc<SetFieldDataToConstantValue>("SetFieldDataToConstantValue","ChangeFieldData", "SCIRun", "Real ported module", "..."); 
   addModuleDesc<SelectSubMatrixModule>("SelectSubMatrix", "Math", "SCIRun", "Real ported module", "...");
   addModuleDesc<MapFieldDataFromElemToNodeModule>("MapFieldDataFromElemToNode", "ChangeFieldData", "SCIRun", "Real ported module", "...");
   addModuleDesc<ApplyMappingMatrixModule>("ApplyMappingMatrix", "ChangeFieldData", "SCIRun", "Real ported module", "...");

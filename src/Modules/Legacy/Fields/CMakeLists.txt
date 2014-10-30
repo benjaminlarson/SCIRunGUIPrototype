@@ -52,6 +52,7 @@ SET(Modules_Legacy_Fields_HEADERS
   AlignMeshBoundingBoxes.h
   SetFieldNodes.h
   SetFieldData.h
+  SetFieldDataToConstantValue.h
   GetFieldData.h
   GetDomainBoundary.h
   GetFieldNodes.h

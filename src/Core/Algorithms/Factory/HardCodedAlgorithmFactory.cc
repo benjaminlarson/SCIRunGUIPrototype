@@ -43,6 +43,7 @@
 #include <Core/Algorithms/Legacy/Fields/MeshData/SetMeshNodes.h>
 #include <Core/Algorithms/Legacy/Fields/FieldData/GetFieldData.h>
 #include <Core/Algorithms/Legacy/Fields/FieldData/SetFieldData.h>
+#include <Core/Algorithms/Legacy/Fields/FieldData/SetFieldDataToConstantValue.h>
 #include <Core/Algorithms/Legacy/Fields/ConvertMeshType/ConvertMeshToIrregularMesh.h>
 #include <Core/Algorithms/Legacy/Fields/DomainFields/GetDomainBoundaryAlgo.h>
 #include <Core/Algorithms/Legacy/Fields/MergeFields/JoinFieldsAlgo.h>
@@ -130,6 +131,7 @@ void HardCodedAlgorithmFactory::addToMakerMap()
       ADD_MODULE_ALGORITHM(InterfaceWithCleaver, InterfaceWithCleaverAlgorithm)
       ADD_MODULE_ALGORITHM(GetFieldData, GetFieldDataAlgo)
       ADD_MODULE_ALGORITHM(SetFieldData, SetFieldDataAlgo)
+			ADD_MODULE_ALGORITHM(SetFieldDataToConstantValue, SetFieldDataToConstantValueAlgo)
       ADD_MODULE_ALGORITHM(GetMatrixSlice, GetMatrixSliceAlgo)
       ADD_MODULE_ALGORITHM(JoinFields, JoinFieldsAlgo)
       ADD_MODULE_ALGORITHM(SplitFieldByDomain, SplitFieldByDomainAlgo)

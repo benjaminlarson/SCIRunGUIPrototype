@@ -49,6 +49,7 @@ SET(Interface_Modules_Fields_FORMS
   MapFieldDataOntoElems.ui
   MapFieldDataOntoNodes.ui
   ClipFieldByFunction.ui
+  SetFieldDataToConstantValue.ui
 )
 
 SET(Interface_Modules_Fields_HEADERS
@@ -73,6 +74,7 @@ SET(Interface_Modules_Fields_HEADERS
   MapFieldDataOntoElemsDialog.h
   MapFieldDataOntoNodesDialog.h
   ClipFieldByFunctionDialog.h
+  SetFieldDataToConstantValueDialog.h
   share.h
 )
 
@@ -98,6 +100,7 @@ SET(Interface_Modules_Fields_SOURCES
   MapFieldDataOntoElemsDialog.cc
   MapFieldDataOntoNodesDialog.cc
   ClipFieldByFunctionDialog.cc
+  SetFieldDataToConstantValueDialog.cc
 )
 
 QT4_WRAP_UI(Interface_Modules_Fields_FORMS_HEADERS ${Interface_Modules_Fields_FORMS})
