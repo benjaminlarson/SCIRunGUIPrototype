@@ -29,7 +29,7 @@
 #ifndef INTERFACE_MODULES_SETFIELD_DATA_TO_CONSTANT_VALUE_H
 #define INTERFACE_MODULES_SETFIELD_DATA_TO_CONSTANT_VALUE_H
 
-#include "Interface/Modules/Fields/ui_SetFieldDataToConstantValueDialog.h"
+#include "Interface/Modules/Fields/ui_SetFieldDataToConstantValue.h"
 #include <Interface/Modules/Base/ModuleDialogGeneric.h>
 #include <Interface/Modules/Fields/share.h>
 
