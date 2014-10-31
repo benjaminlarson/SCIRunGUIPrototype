@@ -32,7 +32,7 @@
 
 using namespace SCIRun::Gui;
 using namespace SCIRun::Dataflow::Networks;
-using namespace SCIRun::Core::Algorithms;
+using namespace SCIRun::Core::Algorithms::Fields;
 
 SetFieldDataToConstantValueDialog::SetFieldDataToConstantValueDialog(const std::string& name, ModuleStateHandle state,
   QWidget* parent /* = 0 */)
